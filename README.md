@@ -6,7 +6,7 @@ Este projeto foi feito por Gabriel Almeida e Vitor Oliveira e consiste em testes
 
 Siga estas instruções para configurar o projeto em sua máquina local.
 
-```bash
+```
 # Clone o repositório
 git clone git@github.com:almeidagabriel01/S206L1-Trabalho.git
 
@@ -17,24 +17,8 @@ cd S206L1-Trabalho
 npm install
 ```
 
-# Executando os Testes
-Execute os testes e gere relatórios com o Mochawesome usando o seguinte comando:
-```
-npx cypress run
-```
-
-
-# Fazendo merge dos arquivos .json gerados (Após a execução dos testes):
-Após rodar os testes, execute o seguinte comando para fazer um merge dos relatórios:
-```
-npx mochawesome-merge "cypress/reports/*.json" > mochawesome.json 
-```
-
-## Os relatórios HTML estarão disponíveis em:
-/mochawesome.json
-
-# Configuração do Cypress
-Aqui está um exemplo da configuração do Cypress usada neste projeto (cypress.config.js):
+# Configuração do Cypress e Mochawesome
+Aqui está um exemplo da configuração do Cypress e Mochawesome usada neste projeto (cypress.config.js):
 
 ```
 const { defineConfig } = require("cypress");
@@ -55,3 +39,19 @@ module.exports = defineConfig({
   },
 });
 ```
+
+# Executando os Testes
+Execute os testes e gere relatórios com o Mochawesome usando o seguinte comando:
+```
+npx cypress run
+```
+
+
+# Fazendo merge dos arquivos .json gerados (Após a execução dos testes):
+Após rodar os testes, execute o seguinte comando para fazer um merge dos relatórios:
+```
+npx mochawesome-merge "cypress/reports/*.json" > mochawesome.json 
+```
+
+## Os relatórios HTML estarão disponíveis em:
+/mochawesome.json
