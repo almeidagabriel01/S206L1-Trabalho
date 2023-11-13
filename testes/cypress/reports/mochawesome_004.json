@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-13T17:13:39.868Z",
+    "end": "2023-11-13T17:13:44.262Z",
+    "duration": 4394,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5c16d510-8cf5-4427-9208-6dae32a63d02",
+      "title": "",
+      "fullFile": "cypress\\e2e\\negative_article_search.cy.js",
+      "file": "cypress\\e2e\\negative_article_search.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6491caf7-b978-4591-b830-7316f6710525",
+          "title": "Teste Negativo de Busca na Wikipedia",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve mostrar que não há resultados para um artigo inexistente",
+              "fullTitle": "Teste Negativo de Busca na Wikipedia deve mostrar que não há resultados para um artigo inexistente",
+              "timedOut": null,
+              "duration": 2691,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.wikipedia.org/');\ncy.get('#searchInput').type('ArtigoXYZInexistente{enter}');\ncy.get('.mw-search-createlink > i').should('contain', 'The page \"ArtigoXYZInexistente\" does not exist');",
+              "err": {},
+              "uuid": "8622fccc-0ada-47a3-87aa-2e3fc1ec5932",
+              "parentUUID": "6491caf7-b978-4591-b830-7316f6710525",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8622fccc-0ada-47a3-87aa-2e3fc1ec5932"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2691,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

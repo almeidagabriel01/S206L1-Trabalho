@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-13T17:13:15.544Z",
+    "end": "2023-11-13T17:13:22.892Z",
+    "duration": 7348,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "337ec9c3-8a31-4ea5-a0dd-273ac09af724",
+      "title": "",
+      "fullFile": "cypress\\e2e\\article_search.cy.js",
+      "file": "cypress\\e2e\\article_search.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cbf91d7d-e410-4173-ab28-9a431e85edab",
+          "title": "Teste de Busca de Artigos na Wikipedia",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve encontrar artigos por título",
+              "fullTitle": "Teste de Busca de Artigos na Wikipedia deve encontrar artigos por título",
+              "timedOut": null,
+              "duration": 4770,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.wikipedia.org/');\ncy.get('#searchInput').type('Albert Einstein{enter}');\ncy.get('#firstHeading').should('contain', 'Albert Einstein');",
+              "err": {},
+              "uuid": "d30067d6-70c4-4963-aa15-53520107190b",
+              "parentUUID": "cbf91d7d-e410-4173-ab28-9a431e85edab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d30067d6-70c4-4963-aa15-53520107190b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4770,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
