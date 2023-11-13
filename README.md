@@ -53,5 +53,5 @@ Após rodar os testes, execute o seguinte comando para fazer um merge dos relat�
 npx mochawesome-merge "cypress/reports/*.json" > mochawesome.json 
 ```
 
-## Os relatórios HTML estarão disponíveis em:
+## Os relatórios JSON estarão disponíveis em:
 /mochawesome.json
